@@ -4,4 +4,3 @@ beautifulsoup4
 rapidfuzz
 streamlit
 python-dotenv
-re
