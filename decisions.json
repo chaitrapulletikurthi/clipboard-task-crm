@@ -1,0 +1,272 @@
+{
+  "1b72848145b612bf": {
+    "decision": "approved",
+    "proposal_type": "match",
+    "website_name": "Amberly Manor",
+    "crm_account_id": "0015D74ZLRY810RGY5",
+    "action": "CREATE_NEW_ACCOUNT",
+    "review_note": "Same name, but the address, ZIP, phone, and state are different. No matching CRM account found, so create a new account under Bellhaven.",
+    "api_result": {
+      "account_id": "0016B1CC29514094FD",
+      "message": "created"
+    }
+  },
+  "99349ad947f2f660": {
+    "decision": "approved",
+    "proposal_type": "match",
+    "website_name": "Bellhaven at Union Square",
+    "crm_account_id": "001GNU41AVXZRLLJ9P",
+    "action": "CREATE_NEW_ACCOUNT",
+    "review_note": "Same city and ZIP, but the address and phone are different. No matching CRM account found, so create a new Bellhaven account.",
+    "api_result": {
+      "account_id": "0014E6FCC235F163DA",
+      "message": "created"
+    }
+  },
+  "9568b5577de32469": {
+    "decision": "approved",
+    "proposal_type": "match",
+    "website_name": "Bellhaven Crossings of Lima",
+    "crm_account_id": "001LGFPBJY4N9MB6KL",
+    "action": "REPARENT_ACCOUNT",
+    "review_note": "Name and address match the Bellhaven website. The parent is outdated, and there is no outstanding AR, so re-parent the existing account to Bellhaven.",
+    "api_result": {
+      "account_id": "001LGFPBJY4N9MB6KL",
+      "message": "updated",
+      "fields": [
+        "name",
+        "note",
+        "parent_id",
+        "parent_name"
+      ]
+    }
+  },
+  "02abdba537ef0d79": {
+    "decision": "approved",
+    "proposal_type": "match",
+    "website_name": "Bellhaven Meadows of Findlay",
+    "crm_account_id": "001UKEFGADQ8YCZ4YM",
+    "action": "REPARENT_ACCOUNT",
+    "review_note": "Name and address match the website. The account has no parent and no outstanding AR, so re-parent it to Bellhaven.",
+    "api_result": {
+      "account_id": "001UKEFGADQ8YCZ4YM",
+      "message": "updated",
+      "fields": [
+        "parent_id",
+        "parent_name"
+      ]
+    }
+  },
+  "693eb8853724ca12": {
+    "decision": "approved",
+    "proposal_type": "match",
+    "website_name": "Bellhaven of Batavia",
+    "crm_account_id": "001UELXDAKFRKB8932",
+    "action": "CREATE_NEW_ACCOUNT",
+    "review_note": "Different facility, address, city, ZIP, and phone. No matching CRM account found, so create a new Bellhaven account.",
+    "api_result": {
+      "account_id": "00130E36AC66FDDE33",
+      "message": "created"
+    }
+  },
+  "29ce29b74945f743": {
+    "decision": "approved",
+    "proposal_type": "match",
+    "website_name": "Bellhaven of Carlisle",
+    "crm_account_id": "001CVBBCSDM7YHN220",
+    "action": "CREATE_NEW_ACCOUNT",
+    "review_note": "Same state, but different facility, address, city, ZIP, and phone. No matching CRM account found, so create a new Bellhaven account.",
+    "api_result": {
+      "account_id": "00134643E07F8AF722",
+      "message": "created"
+    }
+  },
+  "00b0c7b52b2f3d4a": {
+    "decision": "approved",
+    "proposal_type": "match",
+    "website_name": "Bellhaven of Chagrin Falls",
+    "crm_account_id": "001RJU1X4NBWC1Q0G7",
+    "action": "UPDATE_NAME",
+    "review_note": "Same address, city, state, and ZIP, and already under Bellhaven. The website shows a new facility name, so update the CRM name.",
+    "api_result": {
+      "account_id": "001RJU1X4NBWC1Q0G7",
+      "message": "updated",
+      "fields": [
+        "name"
+      ]
+    }
+  },
+  "9b9891e77edbc12b": {
+    "decision": "approved",
+    "proposal_type": "match",
+    "website_name": "Bellhaven of Chesterton",
+    "crm_account_id": "0013NUZQHQUEZ8DXEG",
+    "action": "UPDATE_NAME",
+    "review_note": "Address, city, state, ZIP, and phone match, and the account is already under Bellhaven. The website shows a new facility name, so update the CRM name.",
+    "api_result": {
+      "account_id": "0013NUZQHQUEZ8DXEG",
+      "message": "updated",
+      "fields": [
+        "name"
+      ]
+    }
+  },
+  "a9b0087685b321c4": {
+    "decision": "approved",
+    "proposal_type": "match",
+    "website_name": "Bellhaven of Kettering",
+    "crm_account_id": "001WR41PYNWXCAE2X4",
+    "action": "MARK_NEEDS_REVIEW",
+    "review_note": "Two CRM accounts share the same address, and neither phone matches the website. No other evidence confirms which account is correct, so more information is needed before making an ownership change.",
+    "api_result": {
+      "account_id": "001WR41PYNWXCAE2X4",
+      "message": "updated",
+      "fields": [
+        "status"
+      ]
+    }
+  },
+  "3a2a402feae342e8": {
+    "decision": "approved",
+    "proposal_type": "match",
+    "website_name": "Bellhaven of Marietta",
+    "crm_account_id": "001A34WFSUYHCRBLFT",
+    "action": "CREATE_CHOW_ACCOUNT",
+    "review_note": "Name and address match the website, but the account is under the old parent and has revenue history with outstanding AR. Preserve the old account and create a new Bellhaven account using the CHOW process.",
+    "api_result": {
+      "message": "CHOW completed.",
+      "old_account_id": "001A34WFSUYHCRBLFT",
+      "new_account_id": "0011F7EF443A4047A0"
+    }
+  },
+  "97182494085d56e6": {
+    "decision": "approved",
+    "proposal_type": "match",
+    "website_name": "Bellhaven of Tiffin",
+    "crm_account_id": "001U6RW32TY0WSXZZB",
+    "action": "CREATE_CHOW_ACCOUNT",
+    "review_note": "Name and address match the website, but the account is under the old parent and has revenue history with outstanding AR. Preserve the old account and create a new Bellhaven account using the CHOW process.",
+    "api_result": {
+      "message": "CHOW completed.",
+      "old_account_id": "001U6RW32TY0WSXZZB",
+      "new_account_id": "001AA5199D9F69C95B"
+    }
+  },
+  "d3e050dd76889a4b": {
+    "decision": "approved",
+    "proposal_type": "match",
+    "website_name": "Bellhaven of Zanesville",
+    "crm_account_id": "001H1JMVZWP46D5VUF",
+    "action": "REPARENT_ACCOUNT",
+    "review_note": "Address, city, state, and ZIP match the website. The account is under the old parent and has no revenue history or outstanding AR, so re-parent it to Bellhaven.",
+    "api_result": {
+      "account_id": "001H1JMVZWP46D5VUF",
+      "message": "updated",
+      "fields": [
+        "parent_id",
+        "parent_name"
+      ]
+    }
+  },
+  "8e3486f22f93fe42": {
+    "decision": "approved",
+    "proposal_type": "match",
+    "website_name": "Bellhaven Willow Creek",
+    "crm_account_id": "0017MN2JYAJBDS8WQZ",
+    "action": "UPDATE_NAME",
+    "review_note": "Address, city, state, and ZIP match, and the account is already under Bellhaven. The website shows a new facility name, so update the CRM name.",
+    "api_result": {
+      "account_id": "0017MN2JYAJBDS8WQZ",
+      "message": "updated",
+      "fields": [
+        "name"
+      ]
+    }
+  },
+  "075c156ab9b15a0a": {
+    "decision": "approved",
+    "proposal_type": "duplicate",
+    "survivor": "001EGU7BMJ942ZTRE6",
+    "loser": "001QU150PM4Z15UA71",
+    "review_note": "Same name, address, city, state, ZIP, parent, and care type. Keep the Active account and link the Inactive account as its duplicate.",
+    "api_result": {
+      "account_id": "001QU150PM4Z15UA71",
+      "message": "updated",
+      "fields": [
+        "duplicate_of_account",
+        "status"
+      ]
+    }
+  },
+  "d095733cd71048d0": {
+    "decision": "approved",
+    "proposal_type": "stale",
+    "account_id": "00116ETS45BL7DTQP7",
+    "action": "MARK_NEEDS_REVIEW",
+    "review_note": "This account is under Bellhaven in CRM but is not listed on the current Bellhaven website. No other evidence confirms what changed, so more information is needed.",
+    "api_result": {
+      "account_id": "00116ETS45BL7DTQP7",
+      "message": "updated",
+      "fields": [
+        "status"
+      ]
+    }
+  },
+  "d925e1bb5562742c": {
+    "decision": "approved",
+    "proposal_type": "stale",
+    "account_id": "0016PVXH4B25HWR7QE",
+    "action": "MARK_NEEDS_REVIEW",
+    "review_note": "This account is under Bellhaven in CRM but is not listed on the current Bellhaven website. No other evidence confirms what changed, so more information is needed.",
+    "api_result": {
+      "account_id": "0016PVXH4B25HWR7QE",
+      "message": "updated",
+      "fields": [
+        "status"
+      ]
+    }
+  },
+  "cc41732e45c82012": {
+    "decision": "approved",
+    "proposal_type": "stale",
+    "account_id": "001QU150PM4Z15UA71",
+    "action": "NO_ACTION",
+    "review_note": "Already marked Inactive and linked to the surviving Owosso account as a duplicate. No additional change is needed.",
+    "api_result": {
+      "account_id": "001QU150PM4Z15UA71",
+      "message": "updated",
+      "fields": [
+        "status"
+      ]
+    }
+  },
+  "7dc721ae7855c976": {
+    "decision": "approved",
+    "proposal_type": "stale",
+    "account_id": "001SXSF4ELF0Z2LGDM",
+    "action": "MARK_NEEDS_REVIEW",
+    "review_note": "This account is under Bellhaven in CRM but is not listed on the current Bellhaven website. It has revenue history and outstanding AR, so more information is needed before changing its ownership or status.",
+    "api_result": {
+      "account_id": "001SXSF4ELF0Z2LGDM",
+      "message": "updated",
+      "fields": [
+        "status"
+      ]
+    }
+  },
+  "c5017c6c7aec6231": {
+    "decision": "approved",
+    "proposal_type": "match",
+    "website_name": "Bellhaven of Zanesville",
+    "crm_account_id": "001H1JMVZWP46D5VUF",
+    "action": "UPDATE_NAME",
+    "review_note": "Ownership was already updated to Bellhaven. The address, city, state, and ZIP match the website, so update the old Cedar Trail facility name to Bellhaven of Zanesville.",
+    "api_result": {
+      "account_id": "001H1JMVZWP46D5VUF",
+      "message": "updated",
+      "fields": [
+        "name"
+      ]
+    }
+  }
+}
