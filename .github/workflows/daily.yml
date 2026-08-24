@@ -1,0 +1,51 @@
+name: Daily Bellhaven CRM Reconciliation
+
+on:
+  schedule:
+    - cron: "0 8 * * *"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Scrape Bellhaven website
+        run: python scraper.py
+
+      - name: Fetch current CRM accounts
+        env:
+          CLIPBOARD_API_TOKEN: ${{ secrets.CLIPBOARD_API_TOKEN }}
+        run: python crm.py
+
+      - name: Generate review proposals
+        run: python matcher.py
+
+      - name: Save refreshed review queue
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add bellhaven_locations.csv
+          git add crm_accounts.csv
+          git add match_results.csv
+          git add duplicate_candidates.csv
+          git add stale_bellhaven_accounts.csv
+
+          git diff --cached --quiet || git commit -m "Refresh daily CRM review queue"
+          git push
